@@ -10,7 +10,7 @@ const TurkishFlagVideo = () => {
 
         // Video hızını ayarla (1.0 normal hız, 2.0 iki kat hızlı, 0.5 yarı hız)
         if (videoRef.current) {
-            videoElement.playbackRate = 5.0;  // Doğru kullanım
+            videoElement.playbackRate = 2.0;  // Doğru kullanım
         }
     }, []);
     return (
