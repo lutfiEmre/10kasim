@@ -1,6 +1,7 @@
 import {useEffect, useRef} from 'react';
 import video from '../assets/turkflag.mp4'
 import stars from '../assets/stars.mp4'
+import music from '../assets/music.mp4'
 
 const TurkishFlagVideo = () => {
     const videoRef = useRef(null)
@@ -47,6 +48,22 @@ const TurkishFlagVideo = () => {
                 </video>
 
             </div>
+            <div className="aspect-w-16 aspect-h-9 absolute top-[-100px] left-0 z-10 opacity-0  rounded-lg overflow-hidden">
+                <video
+
+                    className="w-full h-full min-h-screen object-cover"
+                    autoPlay
+                    loop
+                    playsInline
+                >
+                    <source
+                        src={music}
+                        type="video/mp4"
+                    />
+                </video>
+
+            </div>
+
         </div>
     );
 };
