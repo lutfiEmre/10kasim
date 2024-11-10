@@ -1,13 +1,16 @@
-import React, {useEffect, useRef} from 'react';
+import {useEffect, useRef} from 'react';
 import video from '../assets/turkflag.mp4'
 import stars from '../assets/stars.mp4'
 
 const TurkishFlagVideo = () => {
-    const videoRef = useRef()
+    const videoRef = useRef(null)
     useEffect(() => {
+        const videoElement = document.querySelector('video') as HTMLVideoElement;
+
+
         // Video hızını ayarla (1.0 normal hız, 2.0 iki kat hızlı, 0.5 yarı hız)
         if (videoRef.current) {
-            videoRef.current.playbackRate = 5.0; // Burada hızı 2 kat artırdım
+            videoElement.playbackRate = 5.0;  // Doğru kullanım
         }
     }, []);
     return (

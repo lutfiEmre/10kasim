@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import anit from '../src/assets/anitkabir.svg'
 import './App.css'
 import kasım10 from '../src/assets/ataturk.svg'
